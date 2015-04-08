@@ -57,7 +57,7 @@
     "recast": "^0.7.2",
     "sauce-tunnel": "~1.1.0",
     "tmp": "~0.0.18",
-    "uglify-js": "~2.4.0",
+    "uglify-js": "~2.4.17",
     "uglifyify": "^2.4.0",
     "wd": "~0.2.6"
   },

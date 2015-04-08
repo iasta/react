@@ -68,8 +68,8 @@ var min = {
   outfile: './build/react.min.js',
   debug: false,
   standalone: 'React',
-  transforms: [envify({NODE_ENV: 'production'}), uglifyify],
-  after: [es3ify.transform, derequire, minify, bannerify]
+  transforms: [envify({NODE_ENV: 'production'})],
+  after: [es3ify.transform, derequire, bannerify]
 };
 
 var transformer = {
@@ -103,8 +103,8 @@ var addonsMin = {
   debug: false,
   standalone: 'React',
   packageName: 'React (with addons)',
-  transforms: [envify({NODE_ENV: 'production'}), uglifyify],
-  after: [es3ify.transform, derequire, minify, bannerify]
+  transforms: [envify({NODE_ENV: 'production'})],
+  after: [es3ify.transform, derequire, bannerify]
 };
 
 var withCodeCoverageLogging = {
